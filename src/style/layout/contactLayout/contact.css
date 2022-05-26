@@ -1,0 +1,78 @@
+:root {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact_contant {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 5px;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.contact_contant a {
+  color: white;
+}
+
+.contact_contant a svg {
+  height: 40px;
+  width: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact_contant .partOne .social_media {
+  background-color: #350f5e;
+  padding: 20px;
+}
+
+.contact_contant .partOne .social_media a {
+  margin: 30px;
+}
+
+.contact_contant .partTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_contant .partTwo .email_Support {
+  background-color: #350f5e;
+  padding: 20px;
+}
+
+.contact_contant .partTwo .email_Support a {
+  margin: 30px;
+}
+
+.contact_contant .partTwo .developer_community {
+  background-color: #350f5e;
+  padding: 20px;
+}
+
+.contact_contant .partTwo .developer_community a {
+  margin: 30px;
+}
+/*# sourceMappingURL=contact.css.map */

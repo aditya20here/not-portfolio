@@ -1,0 +1,32 @@
+body {
+  font-family: "Fredoka", sans-serif;
+}
+
+.titleContent {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+}
+
+.titleContent svg {
+  margin-left: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.titleContent svg:hover {
+  width: 50px;
+  height: 50px;
+}
+
+.titleContent div {
+  text-align: center;
+  width: 100%;
+}
+/*# sourceMappingURL=titleBar.css.map */

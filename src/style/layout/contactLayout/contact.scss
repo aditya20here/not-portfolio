@@ -1,0 +1,62 @@
+@import "../../variables/variable.scss";
+
+:root{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact_contant {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 5px;
+    margin-top: 10%;
+    width: 100%;
+    
+    a {
+        color: white;
+        
+        svg {
+            height: 40px;
+            width: 40px;
+            transition: 0.5s;
+        }
+        
+    }
+    
+    .partOne {
+        .social_media {
+            background-color: $objectColor;
+            padding: 20px;
+            a {
+                margin: 30px;
+            }
+        }
+    }
+    
+    .partTwo{
+        display: flex;
+        gap: 5px;   
+        width: 100%;
+        justify-content: center;
+        
+        .email_Support{
+            background-color: $objectColor;
+            padding: 20px;
+            a {
+                margin: 30px;
+            }
+        }
+        .developer_community{
+            background-color: $objectColor;
+            padding: 20px;
+            a {
+                margin: 30px;
+            }
+        }
+    }
+}

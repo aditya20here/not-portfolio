@@ -1,0 +1,302 @@
+body {
+  background-color: #474755;
+  height: 100%;
+}
+
+.profileImg {
+  float: right;
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 5%;
+}
+
+.profileImg img {
+  width: 15%;
+  position: relative;
+  border: 3px solid #eb8d00;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0px 0px 250px;
+  position: absolute;
+  -webkit-animation: fadaAnim 1s forwards;
+          animation: fadaAnim 1s forwards;
+}
+
+.smallObject {
+  width: 1000px;
+  height: 150%;
+  background-color: #350f5e;
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  margin: -500px 0px 0px -300px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-animation: transformObject 1s;
+          animation: transformObject 1s;
+  z-index: -1;
+}
+
+@-webkit-keyframes transformObject {
+  from {
+    margin-left: -800px;
+  }
+  to {
+    margin-left: -300px;
+  }
+}
+
+@keyframes transformObject {
+  from {
+    margin-left: -800px;
+  }
+  to {
+    margin-left: -300px;
+  }
+}
+
+.smallObject2 {
+  width: 100px;
+  height: 100px;
+  background-color: #350f5e;
+  position: relative;
+  float: right;
+  border-radius: 50%;
+  margin: 10px 50px 0px 0px;
+  -webkit-animation: fadaAnim 1s forwards;
+          animation: fadaAnim 1s forwards;
+}
+
+.myContent {
+  text-align: center;
+  margin-right: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Fredoka", sans-serif;
+  z-index: 1;
+  color: white;
+  float: right;
+  margin-left: 500px;
+  -webkit-animation: contentDisplay 2s;
+          animation: contentDisplay 2s;
+}
+
+.myContent div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 2px;
+  background-color: #eb8d00;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.myContent div:nth-child(2) {
+  margin-top: 10px;
+  width: 200px;
+  height: 2px;
+  margin-left: 20px;
+  background-color: #eb8d00;
+}
+
+.myContent button {
+  background-color: #eb8d00;
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+  -webkit-animation: shakeAnim 1.1s ease-in;
+          animation: shakeAnim 1.1s ease-in;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.myContent button:hover {
+  background-color: #ff9900;
+}
+
+@-webkit-keyframes fadaAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadaAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shakeAnim {
+  5% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  10% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  15% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shakeAnim {
+  5% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  10% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  15% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes contentDisplay {
+  from {
+    margin-top: 100px;
+    height: 0%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes contentDisplay {
+  from {
+    margin-top: 100px;
+    height: 0%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    height: 100%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=me.css.map */

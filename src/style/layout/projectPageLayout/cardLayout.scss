@@ -1,0 +1,62 @@
+
+@import '../../variables/variable.scss';
+
+.card {
+    width: 300px;
+    margin: 40px;
+    .card__content {
+        position: relative;
+        height: 250px;
+        transition: transform 1.5s;
+        transform-style: preserve-3d;
+        .card__front,
+        .card__back {
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+        .card__front {
+            padding: 2em 2em;
+            background-color: #ffffff;
+            background-size: cover;
+            color: #000000;
+            p{
+                margin-top: 10px;
+            }
+        }
+        .card__back {
+            h1 {
+                padding: 1em 0em 0em 1em;
+            }
+            button{
+                outline: none;
+                padding: 20px;
+                border: none;
+                width: 100%;
+                position: relative;
+                margin-top: 124px;
+                background-color: $borderColor;
+                color: white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                #btn{
+                    color: white;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+            transform: rotateY(0.5turn);
+            background: rgb(255, 255, 255);
+            margin: 0px;
+        }
+    }
+    &:hover .card__content {
+        transform: rotateY(0.5turn);
+    }
+}

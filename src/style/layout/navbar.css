@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  z-index: 1;
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: -webkit-fill-available;
+  background-color: none;
+}
+
+.exp {
+  z-index: 1;
+  position: absolute;
+  height: -webkit-fill-available;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #1a1a1aba;
+  width: -webkit-fill-available;
+  text-align: center;
+}
+
+.navContent .noBack {
+  display: none;
+}
+
+.navContent .back {
+  display: block;
+  width: 20px;
+  float: right;
+  color: white;
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.navContent ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.navContent ul li {
+  list-style: none;
+  padding-bottom: 3px;
+  z-index: 1;
+}
+
+.navContent ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #eb8d00;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.navContent ul li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navContent ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,76 @@
+.card {
+  width: 300px;
+  margin: 40px;
+}
+
+.card .card__content {
+  position: relative;
+  height: 250px;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card .card__content .card__front,
+.card .card__content .card__back {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card .card__content .card__front {
+  padding: 2em 2em;
+  background-color: #ffffff;
+  background-size: cover;
+  color: #000000;
+}
+
+.card .card__content .card__front p {
+  margin-top: 10px;
+}
+
+.card .card__content .card__back {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  background: white;
+  margin: 0px;
+}
+
+.card .card__content .card__back h1 {
+  padding: 1em 0em 0em 1em;
+}
+
+.card .card__content .card__back button {
+  outline: none;
+  padding: 20px;
+  border: none;
+  width: 100%;
+  position: relative;
+  margin-top: 124px;
+  background-color: #eb8d00;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card .card__content .card__back button #btn {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.card:hover .card__content {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+/*# sourceMappingURL=cardLayout.css.map */

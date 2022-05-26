@@ -1,0 +1,53 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6d6d6d;
+}
+
+.rectangle {
+  height: 150%;
+  width: 150%;
+  color: antiquewhite;
+  position: fixed;
+  z-index: -1;
+  background-color: #350f5e;
+  top: 400px;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  right: -200px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.moreInfo {
+  float: right;
+  z-index: 1;
+  margin-top: -75px;
+  position: fixed;
+  -webkit-box-shadow: -2px 2px 30px;
+          box-shadow: -2px 2px 30px;
+  width: 70%;
+  background-color: white;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+body .moreInfo:hover {
+  position: fixed;
+}
+
+.moreInfo:hover .container {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+/*# sourceMappingURL=projectInfo.css.map */
